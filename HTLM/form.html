@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="post" enctype="multipart/form-data">
+        <label for="username">username: </label>
+        <input
+               style="background-color: lightblue; border: 2px solid black; padding : 5px 10px; border-radius: 8px; margin-bottom: 10px;"
+               type="text" 
+               id="username" 
+               minlength="6" 
+               maxlength="15" 
+               required
+               placeholder="Enter your username">
+        <br>
+        <label for="password">Password: </label>
+        <input 
+               style="background-color: lightblue; border: 2px solid black; padding : 5px 10px; border-radius: 8px; margin-bottom: 10px;"
+               type="password"
+               id="password" 
+               placeholder="Enter your password"
+               required>
+        <br>
+        <label for="email">Email: </label>
+        <input 
+               style="background-color: lightblue; 
+                      border: 2px solid black; 
+                      padding : 5px 10px; 
+                      border-radius: 8px; 
+                      margin-bottom: 10px;"
+               type="email"
+               id="email"
+               placeholder="Enter your email"
+               required>
+        <br>
+        <label for="phoneNr.">Phone Number: </label>
+        <input 
+               style="background-color: lightblue; 
+                      border: 2px solid black; 
+                      padding : 5px 10px; 
+                      border-radius: 8px; 
+                      margin-bottom: 10px;"
+               type="tel"
+               id="phoneNr."
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               placeholder="012-345-6789"
+               required>
+       <br>
+       <label for="bday">Birthday: </label>
+       <input type="date"
+              id="bday"
+              placeholder="dd-mm-yyyy"
+              style="background-color: lightblue; 
+                     border: 2px solid black; 
+                     padding : 5px 10px; 
+                     border-radius: 8px; 
+                     margin-bottom: 10px;">
+       <br>
+       <labelfor"quantity">Quantity: </label>
+       <input type="number"
+              id="quantity"
+              min="0"
+              max="100"
+              style="background-color: lightblue; 
+                     border: 2px solid black; 
+                     padding : 5px 10px; 
+                     border-radius: 8px; 
+                     margin-bottom: 10px;">
+       <br>
+       <label for="gender">Gender: </label><br>
+       <label for="male">Male</label>
+       <input type="radio" id="male" value="Male" name="gender"><br>
+       <label for="female">Female</label>
+       <input type="radio"
+              id="female"
+              value="Female"
+              name="gender"><br>
+
+
+       <label for="paymentOpt">Payment Options: </label>
+       <select id="paymentOpt"
+               aria-placeholder="Select a payment option"
+               style="background-color: lightblue; 
+                      border: 2px solid black; 
+                      padding : 5px 10px; 
+                      border-radius: 8px; 
+                      margin-bottom: 10px;"
+              >
+              <option value="creditCard">Credit Card</option>
+              <option value="Visa">Visa</option>
+              <option value="PayPal">PayPal</option>
+       </select><br>
+
+       <label for="comment">Comment: </label>
+       <textarea id="comment" name="comment" rows="3" cols="20"
+                 style="background-color: lightblue; 
+                        border: 2px solid black; 
+                        padding : 5px 10px; 
+                        border-radius: 8px; 
+                        margin-bottom: 10px;">
+       </textarea><br>
+       <label for="file">File: </label>
+       <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+       <label for="subscribe">Subscribe to newsletter: </label>
+       <input type="checkbox" id="subscribe" name="subscribe"><br>
+
+       <!--  -->
+       <hr>
+       <input type="reset" id="">
+       <input type="submit" name="" id="">
+
+    </form>
+</body>
+</html>
